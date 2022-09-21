@@ -237,6 +237,26 @@ body {
     background: var(--skin-color);
 }
 
+/* pagination for search result */
+
+.container .search_result{
+    justify-content: space-between;
+}
+
+.container .search_result .search{
+    display: none; 
+    border-radius: var(--card-border-radius-5);
+}
+
+.container #info p{
+    width: 100%;
+    text-align: center;
+    color: var(--skin-color);
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+
 
 /* ==== for tablet device and mid-screen device ==== */
 @media screen and (max-width:1024px) {

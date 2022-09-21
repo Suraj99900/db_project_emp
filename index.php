@@ -23,9 +23,10 @@
             <h1 class="title">details of employee</h1>
 
             <div class="search_box">
-                <form  name="search_data">
-                <input type="search" placeholder="Enter Employee name" name="search" id="emp" class="emp_search">
-                <input type="button" value="search" class="btn btn_search" id="btn_s">
+                <form name="search_data">
+                    <input type="search" placeholder="Enter Employee name" name="search" id="emp" class="emp_search">
+                    <input type="button" value="search" class="btn btn_search" id="btn_s">
+                    <input type="button" value="clear" class="btn btn_search" id="btn_c">
                 </form>
             </div>
 
@@ -36,6 +37,9 @@
                             <h2>Employee</h2>
                         </div>
                     </div>
+                    <div class="row" id="info">
+
+                    </div>
                     <div class="row" id="data_section">
 
                         <!-- section item start -->
@@ -43,11 +47,13 @@
                         <!-- service item end -->
 
                     </div>
-
+                    
                     <!-- pagination -->
 
-                    <div class="box_btn">
-                      
+                    <div class="box_btn" id="btn_pagination">
+
+                        <button class="btn prev_pag" id="pag_prev" >prev</button>
+
                         <button id="i0" class="i0 btn add active">1 </button>
                         <button id="i1" class="i1 btn add">2 </button>
                         <button id="i2" class="i2 btn add">3</button>
@@ -56,15 +62,16 @@
                         <button id="i5" class="i5 btn add">6</button>
                         <button id="i6" class="i6 btn add">7</button>
 
-                   
-                    </div>
+                        <button class="btn next_pag" id="pag_next" >next</button>
 
+                    </div>
+                
                 </div>
             </section>
 
         </div>
     </div>
-    
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 
